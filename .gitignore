@@ -1,0 +1,31 @@
+# Archivos de estado (contienen secretos)
+terraform.tfstate
+terraform.tfstate.backup
+
+# Estado dentro de subdirectorios
+**/terraform.tfstate
+**/terraform.tfstate.backup
+
+# Bloqueo de dependencias (puede ser regenerado)
+.terraform.lock.hcl
+
+# Carpeta local de Terraform (plugins, providers descargados, etc.)
+.terraform/
+
+# Archivos de llaves privadas
+*.pem
+*.key
+
+# Archivos con variables sensibles
+*.tfvars
+*.tfvars.json
+
+# Archivos de salida de comandos, logs, etc.
+crash.log
+*.log
+notes.txt
+
+# Evitar subir archivos personales o temporales
+*.bak
+*.swp
+*.tmp
